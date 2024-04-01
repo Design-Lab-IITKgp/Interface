@@ -15,7 +15,7 @@ if __name__ == "__main__":
             myrecording = sd.rec(DURATION * RATE, samplerate=RATE, channels=CHANNEL, dtype='float64')
             sd.wait()
             print("Audio recording complete , Play Audio")
-            wavio.write("testsent.wav",data=recording,rate=RATE,sampwidth=2)
+            wavio.write("testsent.wav",data=myrecording,rate=RATE,sampwidth=2)
             print(myrecording)
             base_url = "http://10.145.122.143:5050"
             
